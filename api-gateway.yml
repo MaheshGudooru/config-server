@@ -12,7 +12,7 @@ spring:
           routes:
           - id: order
             uri:
-              http://localhost:8084
+              http://order-service:8084
             predicates:
             - Path=/api/order/**
             filters:
@@ -20,7 +20,7 @@ spring:
 
           - id: cart
             uri:
-              http://localhost:8083
+              http://cart-service:8083
             predicates:
             - Path=/api/cart/**
             filters:
@@ -28,7 +28,7 @@ spring:
           
           - id: user
             uri:
-              http://localhost:8082
+              http://user-service:8082
             predicates:
             - Path=/api/user/**
             filters:
@@ -36,7 +36,7 @@ spring:
 
           - id: product
             uri:
-              http://localhost:8081
+              http://product-service:8081
             predicates:
             - Path=/api/products/**
             filters:
