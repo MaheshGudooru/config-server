@@ -14,7 +14,7 @@ spring:
             uri:
               http://order-service:8084
             predicates:
-            - Path=/api/order/**
+            - Path=/api/orders/**
             filters:
             - StripPrefix=1
 
@@ -22,7 +22,7 @@ spring:
             uri:
               http://cart-service:8083
             predicates:
-            - Path=/api/cart/**
+            - Path=/api/cart/items/**
             filters:
             - StripPrefix=1
           
@@ -30,7 +30,7 @@ spring:
             uri:
               http://user-service:8082
             predicates:
-            - Path=/api/user/**
+            - Path=/api/users/**
             filters:
             - StripPrefix=1
 
