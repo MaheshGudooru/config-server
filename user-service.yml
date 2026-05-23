@@ -49,6 +49,12 @@ resilience4j:
         max-attempts: 3
         wait-duration: 500ms
 
+springdoc:
+  api-docs:
+    enabled: true
+
+  swagger-ui:
+    enabled: true
 
 server:
   port: 8082
